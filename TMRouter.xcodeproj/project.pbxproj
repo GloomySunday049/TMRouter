@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		ED2BFC9B1EB337F200291F32 /* TMRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2BFC911EB337F200291F32 /* TMRouter.framework */; };
-		ED2BFCA01EB337F200291F32 /* TMRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFC9F1EB337F200291F32 /* TMRouterTests.swift */; };
-		ED2BFCA21EB337F200291F32 /* TMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2BFC941EB337F200291F32 /* TMRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED2BFCB01EB3392000291F32 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2BFCAE1EB3392000291F32 /* Info.plist */; };
+		ED2BFCB11EB3392000291F32 /* TMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2BFCAF1EB3392000291F32 /* TMRouter.h */; };
+		ED2BFCB51EB3392800291F32 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2BFCB31EB3392800291F32 /* Info.plist */; };
+		ED2BFCB61EB3392800291F32 /* TMRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		ED2BFC911EB337F200291F32 /* TMRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2BFC941EB337F200291F32 /* TMRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMRouter.h; sourceTree = "<group>"; };
-		ED2BFC951EB337F200291F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2BFC9A1EB337F200291F32 /* TMRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2BFC9F1EB337F200291F32 /* TMRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMRouterTests.swift; sourceTree = "<group>"; };
-		ED2BFCA11EB337F200291F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2BFCAE1EB3392000291F32 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2BFCAF1EB3392000291F32 /* TMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRouter.h; sourceTree = "<group>"; };
+		ED2BFCB31EB3392800291F32 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,8 @@
 		ED2BFC871EB337F200291F32 = {
 			isa = PBXGroup;
 			children = (
-				ED2BFC931EB337F200291F32 /* TMRouter */,
-				ED2BFC9E1EB337F200291F32 /* TMRouterTests */,
+				ED2BFCAD1EB3392000291F32 /* Source */,
+				ED2BFCB21EB3392800291F32 /* Tests */,
 				ED2BFC921EB337F200291F32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +70,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED2BFC931EB337F200291F32 /* TMRouter */ = {
+		ED2BFCAD1EB3392000291F32 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				ED2BFC941EB337F200291F32 /* TMRouter.h */,
-				ED2BFC951EB337F200291F32 /* Info.plist */,
+				ED2BFCAE1EB3392000291F32 /* Info.plist */,
+				ED2BFCAF1EB3392000291F32 /* TMRouter.h */,
 			);
-			path = TMRouter;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		ED2BFC9E1EB337F200291F32 /* TMRouterTests */ = {
+		ED2BFCB21EB3392800291F32 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				ED2BFC9F1EB337F200291F32 /* TMRouterTests.swift */,
-				ED2BFCA11EB337F200291F32 /* Info.plist */,
+				ED2BFCB31EB3392800291F32 /* Info.plist */,
+				ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */,
 			);
-			path = TMRouterTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +95,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2BFCA21EB337F200291F32 /* TMRouter.h in Headers */,
+				ED2BFCB11EB3392000291F32 /* TMRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2BFCB01EB3392000291F32 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2BFCB51EB3392800291F32 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2BFCA01EB337F200291F32 /* TMRouterTests.swift in Sources */,
+				ED2BFCB61EB3392800291F32 /* TMRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +332,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TMRouter/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tm.TMRouter;
@@ -347,7 +351,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TMRouter/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tm.TMRouter;
@@ -361,7 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2LJX58TYK3;
-				INFOPLIST_FILE = TMRouterTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tm.TMRouterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,7 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2LJX58TYK3;
-				INFOPLIST_FILE = TMRouterTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tm.TMRouterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
