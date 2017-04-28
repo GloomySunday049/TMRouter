@@ -12,6 +12,9 @@
 		ED2BFCB11EB3392000291F32 /* TMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2BFCAF1EB3392000291F32 /* TMRouter.h */; };
 		ED2BFCB51EB3392800291F32 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2BFCB31EB3392800291F32 /* Info.plist */; };
 		ED2BFCB61EB3392800291F32 /* TMRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */; };
+		ED2BFCBA1EB339BC00291F32 /* TMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB71EB339BC00291F32 /* TMRouter.swift */; };
+		ED2BFCBB1EB339BC00291F32 /* TMRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB81EB339BC00291F32 /* TMRouterProtocol.swift */; };
+		ED2BFCBC1EB339BC00291F32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB91EB339BC00291F32 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		ED2BFCAF1EB3392000291F32 /* TMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRouter.h; sourceTree = "<group>"; };
 		ED2BFCB31EB3392800291F32 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouterTests.swift; sourceTree = "<group>"; };
+		ED2BFCB71EB339BC00291F32 /* TMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouter.swift; sourceTree = "<group>"; };
+		ED2BFCB81EB339BC00291F32 /* TMRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouterProtocol.swift; sourceTree = "<group>"; };
+		ED2BFCB91EB339BC00291F32 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 			children = (
 				ED2BFCAE1EB3392000291F32 /* Info.plist */,
 				ED2BFCAF1EB3392000291F32 /* TMRouter.h */,
+				ED2BFCB71EB339BC00291F32 /* TMRouter.swift */,
+				ED2BFCB81EB339BC00291F32 /* TMRouterProtocol.swift */,
+				ED2BFCB91EB339BC00291F32 /* ViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 					ED2BFC901EB337F200291F32 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2LJX58TYK3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					ED2BFC991EB337F200291F32 = {
@@ -202,6 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2BFCBC1EB339BC00291F32 /* ViewController.swift in Sources */,
+				ED2BFCBA1EB339BC00291F32 /* TMRouter.swift in Sources */,
+				ED2BFCBB1EB339BC00291F32 /* TMRouterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +339,7 @@
 		ED2BFCA61EB337F200291F32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2LJX58TYK3;
@@ -338,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tm.TMRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -345,6 +360,7 @@
 		ED2BFCA71EB337F200291F32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2LJX58TYK3;
@@ -364,6 +380,7 @@
 		ED2BFCA91EB337F200291F32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2LJX58TYK3;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -376,6 +393,7 @@
 		ED2BFCAA1EB337F200291F32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2LJX58TYK3;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
