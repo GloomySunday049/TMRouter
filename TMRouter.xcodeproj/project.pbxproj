@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		ED2BFC9B1EB337F200291F32 /* TMRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2BFC911EB337F200291F32 /* TMRouter.framework */; };
-		ED2BFCB01EB3392000291F32 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2BFCAE1EB3392000291F32 /* Info.plist */; };
-		ED2BFCB11EB3392000291F32 /* TMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2BFCAF1EB3392000291F32 /* TMRouter.h */; };
-		ED2BFCB51EB3392800291F32 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2BFCB31EB3392800291F32 /* Info.plist */; };
+		ED2BFCB11EB3392000291F32 /* TMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2BFCAF1EB3392000291F32 /* TMRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED2BFCB61EB3392800291F32 /* TMRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */; };
-		ED2BFCBA1EB339BC00291F32 /* TMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB71EB339BC00291F32 /* TMRouter.swift */; };
-		ED2BFCBB1EB339BC00291F32 /* TMRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB81EB339BC00291F32 /* TMRouterProtocol.swift */; };
-		ED2BFCBC1EB339BC00291F32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFCB91EB339BC00291F32 /* ViewController.swift */; };
+		ED2BFD131EB76EB800291F32 /* TMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BFD121EB76EB800291F32 /* TMRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +30,7 @@
 		ED2BFCAF1EB3392000291F32 /* TMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRouter.h; sourceTree = "<group>"; };
 		ED2BFCB31EB3392800291F32 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouterTests.swift; sourceTree = "<group>"; };
-		ED2BFCB71EB339BC00291F32 /* TMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouter.swift; sourceTree = "<group>"; };
-		ED2BFCB81EB339BC00291F32 /* TMRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouterProtocol.swift; sourceTree = "<group>"; };
-		ED2BFCB91EB339BC00291F32 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED2BFD121EB76EB800291F32 /* TMRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +75,7 @@
 			children = (
 				ED2BFCAE1EB3392000291F32 /* Info.plist */,
 				ED2BFCAF1EB3392000291F32 /* TMRouter.h */,
-				ED2BFCB71EB339BC00291F32 /* TMRouter.swift */,
-				ED2BFCB81EB339BC00291F32 /* TMRouterProtocol.swift */,
-				ED2BFCB91EB339BC00291F32 /* ViewController.swift */,
+				ED2BFD121EB76EB800291F32 /* TMRouter.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -91,10 +83,26 @@
 		ED2BFCB21EB3392800291F32 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ED2BFCC01EB3505800291F32 /* ModuleB */,
+				ED2BFCBF1EB3504F00291F32 /* ModuleA */,
 				ED2BFCB31EB3392800291F32 /* Info.plist */,
 				ED2BFCB41EB3392800291F32 /* TMRouterTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		ED2BFCBF1EB3504F00291F32 /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModuleA;
+			sourceTree = "<group>";
+		};
+		ED2BFCC01EB3505800291F32 /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModuleB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2BFCB01EB3392000291F32 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2BFCB51EB3392800291F32 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,9 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2BFCBC1EB339BC00291F32 /* ViewController.swift in Sources */,
-				ED2BFCBA1EB339BC00291F32 /* TMRouter.swift in Sources */,
-				ED2BFCBB1EB339BC00291F32 /* TMRouterProtocol.swift in Sources */,
+				ED2BFD131EB76EB800291F32 /* TMRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

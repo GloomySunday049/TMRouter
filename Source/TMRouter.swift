@@ -2,39 +2,32 @@
 //  TMRouter.swift
 //  TMRouter
 //
-//  Created by 孟钰丰 on 2017/4/28.
+//  Created by 孟钰丰 on 2017/5/1.
 //  Copyright © 2017年 GloomySunday. All rights reserved.
 //
 
 import Foundation
 
-public class TMRouter {
+open class TMRouter {
+    
+    private var cacheTarget: [String : Any] = [:]
     
     static let instance: TMRouter = {
         return TMRouter()
     }()
-
-    var routers: [String : Int] = [:]
     
-    private init(){}
+    private init() {}
     
-    
-    func initialRouters() {
-        
-    }
-}
-
-extension TMRouter {
-    
-    static func initial() {
-        instance.initialRouters()
+    /// 远程调用
+    ///
+    /// - Parameters:
+    ///   - url: <#url description#>
+    ///   - options: <#options description#>
+    ///   - completion: <#completion description#>
+    /// - Returns: <#return value description#>
+    final public func perform(actionWithURL url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:], completion: ((Void) -> [String: Any])? = nil) -> Bool {
+        return false
     }
     
-    static func generateRoutes() -> [String : Int] {
-        return [:]
-    }
-    
-    static func registerRoutes(router: TMRouter.Type) {
-        
-    }
+//    final public func perform(moduleWithKey key: String, action: )
 }
