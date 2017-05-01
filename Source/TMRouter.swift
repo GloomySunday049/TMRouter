@@ -12,7 +12,7 @@ open class TMRouter {
     
     private var cacheTarget: [String : Any] = [:]
     
-    static let instance: TMRouter = {
+    public static let instance: TMRouter = {
         return TMRouter()
     }()
     
